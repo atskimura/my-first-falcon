@@ -1,0 +1,35 @@
+{
+  "packageDirectories": [
+    { "path": "sfdx-source/myfirstfalcon", "default": true },
+    { "path": "sfdx-source/unpackaged"},
+    { "path": "sfdx-source/untracked"}
+  ],
+  "namespace": "myfirstfalcon",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "43.0",
+  "plugins": {
+    "sfdxFalcon": {
+      "producerAlias"   : "univ-ctrs",
+      "producerName"    : "Universal Containers",
+      "projectAlias"    : "uc-pkgd-app",
+      "projectName"     : "my-first-falcon",
+      "projectType"     : "appx:managed1gp",
+      "defaultRecipe"   : "build-scratch-org.json",
+      "gitRemoteUri"    : "https://github.com/atskimura/my-first-falcon.git",
+      "gitHubUrl"       : "https://github.com/my-org/my-repo",
+      "projectVersion"  : "0.0.1",
+      "schemaVersion"   : "0.0.1",
+      "pluginVersion"   : "0.0.91",
+      "appxPackage"     : {
+        "namespacePrefix"   : "myfirstfalcon",
+        "packageName"       : "My First Falcon",
+        "metadataPackageId" : "033000000000000",
+        "packageVersionId"  : {
+          "release" : "04t000000000000",
+          "beta"    : "04t000000000000"
+        }
+      },
+      "appxDemo": {}
+    }
+  }
+}
